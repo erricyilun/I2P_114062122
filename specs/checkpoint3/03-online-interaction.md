@@ -1,5 +1,8 @@
 # Online Interaction
 
+## Important:
+**Saving** and **Loading** for Online isn't needed! If you can make it work though, props to you.
+
 Score: 3 points
 
 ![Alt Text](./Checkpoint3_gif/OnlineMovement.gif)
