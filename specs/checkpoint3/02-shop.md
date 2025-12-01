@@ -1,6 +1,6 @@
 # Checkpoint 3 — Shop
 
-Score: 1 Points
+Score: 2 Points
 
 ![Alt Text](./Checkpoint3_gif/Shop.gif)
 
