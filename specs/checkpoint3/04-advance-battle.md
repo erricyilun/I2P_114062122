@@ -9,7 +9,7 @@ Score: 4 points
 - [ ] (1 point) Player action can use 3 different items from the backpack. The required items are:
     - Heal Potion     : Heal your pokemon
     - Strength Potion : Increase your pokemon's attack power
-    - Defense Potion  : Increase your pokemon's defense power (Reduce number of opponent's attack)
+    - Defense Potion  : Increase your pokemon's defense power (Reduce damage of opponent's attack)
 
 - [ ] (1 point) Create a concept of evolution
     - Your pokemon can evolve into a stronger (similar to level up)
