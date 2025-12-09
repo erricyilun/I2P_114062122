@@ -67,3 +67,10 @@ Although it's not required, you may also share the server with your friends by c
 3. Music
 
     Url: https://www.enls.eu/prelooped/
+
+## Changelogs
+[2025/12/9]
+- Updated **server.py** to use websockets. (It's best that you don't touch this part)
+- Updated **online_manager.py** to connect with the new server.py; added comments.
+- Added chat functionality template for Checkpoint 3's spec 3. See **src/interface/chat_overlay.py** as well as **src/scenes/game_scene.py**
+- Added helpful comments
