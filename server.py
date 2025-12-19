@@ -2,8 +2,12 @@ import asyncio
 import json
 import time
 import threading
+<<<<<<< HEAD
 from typing import Dict, Set, Any
 from dataclasses import dataclass, asdict
+=======
+from typing import Set, Any
+>>>>>>> 778521bd030d2e2b05e6ab04dd653258e473799b
 from server.playerHandler import PlayerHandler
 
 from websockets.asyncio.server import serve
@@ -102,7 +106,6 @@ async def handle_client(websocket: Any):
             "type": "registered",
             "id": player_id
         }))
-
         # Send initial player list
         players = PLAYER_HANDLER.list_players()
         await websocket.send(json.dumps({
@@ -110,20 +113,17 @@ async def handle_client(websocket: Any):
             "players": players,
             "timestamp": time.time()
         }))
-
         # Send recent chat messages
         recent_chat = CHAT.list_since(0)
         await websocket.send(json.dumps({
             "type": "chat_update",
             "messages": recent_chat
         }))
-
         # Handle incoming messages
         async for message in websocket:
             try:
                 data = json.loads(message)
                 msg_type = data.get("type")
-
                 if msg_type == "player_update":
                     # Update player position - use server-assigned ID, ignore client ID
                     x = float(data.get("x", 0))
@@ -160,7 +160,6 @@ async def handle_client(websocket: Any):
                                 "type": "error",
                                 "message": "empty_message"
                             }))
-
             except json.JSONDecodeError:
                 await websocket.send(json.dumps({
                     "type": "error",

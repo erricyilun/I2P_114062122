@@ -71,7 +71,6 @@ def main():
         height=100,
         on_click=on_button_click
     )
-
     running = True
     dt = 0
     
