@@ -1,0 +1,1 @@
+Sprite(img_path, (width, height))
